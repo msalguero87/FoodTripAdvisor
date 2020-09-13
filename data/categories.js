@@ -1,7 +1,55 @@
 const categories = [
   {
-    "label": "Food & Beverage",
+    "label": "All",
     "value": "food-beverage"
+  },
+  {
+    "label": "Pizza Place",
+    "value": "pizza-place"
+  },
+  {
+    "label": "Burger Restaurant",
+    "value": "burger-restaurant"
+  },
+  {
+    "label": "Hot Dog Joint",
+    "value": "hot-dog-joint"
+  },
+  {
+    "label": "Mexican Restaurant",
+    "value": "mexican-restaurant"
+  },
+  {
+    "label": "Tex-Mex Restaurant",
+    "value": "texmex-restaurant"
+  },
+  {
+    "label": "Chinese Restaurant",
+    "value": "chinese-restaurant"
+  },
+  {
+    "label": "Italian Restaurant",
+    "value": "italian-restaurant"
+  },
+  {
+    "label": "Steakhouse",
+    "value": "steakhouse"
+  },
+  {
+    "label": "Bar & Grill",
+    "value": "bar-grill"
+  },
+  {
+    "label": "Barbecue Restaurant",
+    "value": "barbecue-restaurant"
+  },
+  {
+    "label": "Sandwich Shop",
+    "value": "sandwich-shop"
+  },
+  {
+    "label": "Smoothie & Juice Bar",
+    "value": "smoothie-juice-bar"
   },
   {
     "label": "Bagel Shop",
@@ -34,6 +82,10 @@ const categories = [
   {
     "label": "Cocktail Bar",
     "value": "cocktail-bar"
+  },
+  {
+    "label": "Theme Restaurant",
+    "value": "theme-restaurant"
   },
   {
     "label": "Dive Bar",
@@ -184,18 +236,6 @@ const categories = [
     "value": "farmers-market"
   },
   {
-    "label": "Foodservice Distributor",
-    "value": "food-beverage-service-distribution"
-  },
-  {
-    "label": "Food Consultant",
-    "value": "food-consultant"
-  },
-  {
-    "label": "Food Delivery Service",
-    "value": "food-delivery-service"
-  },
-  {
     "label": "Grocery Store",
     "value": "food-grocery"
   },
@@ -314,10 +354,6 @@ const categories = [
   {
     "label": "Cambodian Restaurant",
     "value": "cambodian-restaurant"
-  },
-  {
-    "label": "Chinese Restaurant",
-    "value": "chinese-restaurant"
   },
   {
     "label": "Anhui Restaurant",
@@ -624,14 +660,6 @@ const categories = [
     "value": "austrian-restaurant"
   },
   {
-    "label": "Bar & Grill",
-    "value": "bar-grill"
-  },
-  {
-    "label": "Barbecue Restaurant",
-    "value": "barbecue-restaurant"
-  },
-  {
     "label": "Basque Restaurant",
     "value": "basque-restaurant"
   },
@@ -650,10 +678,6 @@ const categories = [
   {
     "label": "Buffet Restaurant",
     "value": "buffet-restaurant"
-  },
-  {
-    "label": "Burger Restaurant",
-    "value": "burger-restaurant"
   },
   {
     "label": "Cajun & Creole Restaurant",
@@ -816,10 +840,6 @@ const categories = [
     "value": "himalayan-restaurant"
   },
   {
-    "label": "Hot Dog Joint",
-    "value": "hot-dog-joint"
-  },
-  {
     "label": "Hungarian Restaurant",
     "value": "hungarian-restaurant"
   },
@@ -938,10 +958,6 @@ const categories = [
   {
     "label": "Irish Restaurant",
     "value": "irish-restaurant"
-  },
-  {
-    "label": "Italian Restaurant",
-    "value": "italian-restaurant"
   },
   {
     "label": "Abruzzo Restaurant",
@@ -1080,14 +1096,6 @@ const categories = [
     "value": "honduran-restaurant"
   },
   {
-    "label": "Mexican Restaurant",
-    "value": "mexican-restaurant"
-  },
-  {
-    "label": "Tex-Mex Restaurant",
-    "value": "texmex-restaurant"
-  },
-  {
     "label": "Nicaraguan Restaurant",
     "value": "nicaraguan-restaurant"
   },
@@ -1200,10 +1208,6 @@ const categories = [
     "value": "pakistani-restaurant"
   },
   {
-    "label": "Pizza Place",
-    "value": "pizza-place"
-  },
-  {
     "label": "Polish Restaurant",
     "value": "polish-restaurant"
   },
@@ -1264,20 +1268,12 @@ const categories = [
     "value": "sri-lankan-restaurant"
   },
   {
-    "label": "Steakhouse",
-    "value": "steakhouse"
-  },
-  {
     "label": "Swiss Restaurant",
     "value": "swiss-restaurant"
   },
   {
     "label": "Tapas Bar & Restaurant",
     "value": "tapas-bar-restaurant"
-  },
-  {
-    "label": "Theme Restaurant",
-    "value": "theme-restaurant"
   },
   {
     "label": "Ukrainian Restaurant",
@@ -1290,14 +1286,6 @@ const categories = [
   {
     "label": "Vegetarian/Vegan Restaurant",
     "value": "vegetarian-vegan-restaurant"
-  },
-  {
-    "label": "Sandwich Shop",
-    "value": "sandwich-shop"
-  },
-  {
-    "label": "Smoothie & Juice Bar",
-    "value": "smoothie-juice-bar"
   },
   {
     "label": "Winery/Vineyard",

@@ -22,7 +22,7 @@ const Search = ({ navigation }) => {
             />
         </View>
         <View style={{ flex:2}}>
-            <Text>What are we looking for?</Text>
+            <Text style={styles.label}>What are we looking for?</Text>
             <Picker
                 selectedValue={category}
                 onValueChange={(itemValue, itemIndex) =>
@@ -30,7 +30,7 @@ const Search = ({ navigation }) => {
                 }>
                 {pickerItems}
             </Picker>
-            <Text>Check every:</Text>
+            <Text style={styles.label}>Check every:</Text>
             <View style={styles.countdownContainer}>
                 <View style={styles.countDownPicker}>
                     <TextInput keyboardType='number-pad' onChangeText={text => setHour(text)} style={{borderWidth: 0, fontSize: 32 }} defaultValue={hour} />
@@ -47,20 +47,22 @@ const Search = ({ navigation }) => {
                     <Text style={styles.countDownFontSize}>sec</Text>
                 </View>
             </View>
-            <Text>How far can we look?</Text>
+            <Text style={styles.label}>How far can we look?</Text>
             <View style={{flexDirection: 'row'}}>
                     <TextInput keyboardType='number-pad' onChangeText={text => setRadius(text)} style={{borderWidth: 0, fontSize: 32 }} defaultValue={radius} />
-                    <Text style={styles.countDownFontSize}>miles near me</Text>
+                    <Text style={{ fontSize: 32, textAlignVertical: 'center'}}>miles near me</Text>
             </View>
         </View>
-        <Button title="Start searching" onPress={() => navigation.navigate('Results', {
-            category: category,
-            categoryLabel: categories.find(element => element.value === category).label,
-            radius: radius,
-            hour: hour,
-            minute: minute,
-            second: second
-        })}></Button>
+        <View style={{width: '80%', alignSelf: 'center'}}>
+            <Button title="Start searching" color='#982121' onPress={() => navigation.navigate('Results', {
+                category: category,
+                categoryLabel: categories.find(element => element.value === category).label,
+                radius: radius,
+                hour: hour,
+                minute: minute,
+                second: second
+            })}></Button>
+        </View>
     </ScrollView>
   );
 }
@@ -68,8 +70,13 @@ const Search = ({ navigation }) => {
 export default Search;
 
 const styles = StyleSheet.create({
+    label:{
+        fontSize: 18,
+        fontWeight:'bold',
+        marginTop: 10
+    },
     countDownFontSize: {
-        fontSize: 32,
+        fontSize: 32
     },
     countdownContainer: {
         flexDirection: 'row',
